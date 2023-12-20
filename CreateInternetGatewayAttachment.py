@@ -5,7 +5,7 @@ vpc_id = 'ENTER VPC ID HERE'
 
 ec2 = boto3.client('ec2')
 
-ec2.atttach_internet_gateway(
+ec2.attach_internet_gateway(
     InternetGatewayId=internet_gateway_id,
     VpcId=vpc_id,
 )
